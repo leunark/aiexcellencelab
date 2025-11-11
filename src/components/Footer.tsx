@@ -1,0 +1,43 @@
+import { LogoMark } from '@/components/LogoMark';
+
+export const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="py-12 bg-white dark:bg-background border-t border-gray-200 dark:border-border">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center space-y-4">
+          <div className="flex flex-col items-center gap-3">
+            <div className="inline-flex items-center justify-center rounded-3xl border border-gray-200 bg-white p-3 shadow-sm dark:border-white/10 dark:bg-white/5">
+              <LogoMark className="h-9 w-9" />
+            </div>
+            <p className="text-base font-semibold text-gray-900 dark:text-white">
+              AI Excellence Lab
+            </p>
+          </div>
+
+          <p className="text-sm text-gray-600 dark:text-muted-foreground">
+            We do not collect or store any training data from client systems.
+          </p>
+          
+          <div className="text-sm text-gray-600 dark:text-muted-foreground space-y-1">
+            <p>AI Excellence Lab (in formation) · Berlin, Germany</p>
+            <p>
+              contact:{' '}
+              <a
+                href="mailto:info@aiexcellencelab.com"
+                className="text-primary hover:text-primary/80 transition-colors"
+              >
+                info@aiexcellencelab.com
+              </a>
+            </p>
+          </div>
+
+          <p className="text-xs text-gray-500 dark:text-muted-foreground/60 pt-4">
+            © {currentYear} AI Excellence Lab. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+};
