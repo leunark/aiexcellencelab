@@ -12,7 +12,21 @@ const getBasePath = () => {
   if (typeof window === 'undefined') {
     return import.meta.env.BASE_URL || '/';
   }
-  return new URL(import.meta.env.BASE_URL || '/', window.location.origin).pathname;
+
+  const defaultBase = import.meta.env.BASE_URL || '/';
+  const ghPagesRepoPath = '/aiexcellencelab/';
+  const hostname = window.location.hostname;
+  const pathname = window.location.pathname;
+
+  if (hostname.endsWith('github.io') && pathname.startsWith(ghPagesRepoPath)) {
+    return ghPagesRepoPath;
+  }
+
+  if (defaultBase === './') {
+    return '/';
+  }
+
+  return defaultBase;
 };
 
 const basePath = getBasePath();
