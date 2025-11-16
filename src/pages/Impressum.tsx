@@ -26,10 +26,10 @@ const Impressum = () => {
               <p>
                 E-Mail:{' '}
                 <a
-                  href="mailto:info@aiexcellencelabs.de"
+                  href="mailto:info@aiexcellencelabs.com"
                   className="text-primary hover:text-primary/80 transition-colors"
                 >
-                  info@aiexcellencelabs.de
+                  info@aiexcellencelabs.com
                 </a>
               </p>
               <p>Steuernummer: auf Anfrage</p>

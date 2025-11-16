@@ -71,7 +71,7 @@ export const Navigation = () => {
                 </button>
               ))}
               <button
-                onClick={() => window.location.href = 'mailto:info@aiexcellencelabs.de'}
+                onClick={() => window.location.href = 'mailto:info@aiexcellencelabs.com'}
                 className="ml-4 px-4 py-2 text-sm font-semibold text-white bg-primary hover:bg-primary/90 rounded-md transition-all shadow-md shadow-primary/30"
               >
                 Get Started
@@ -105,7 +105,7 @@ export const Navigation = () => {
                 </button>
               ))}
               <button
-                onClick={() => window.location.href = 'mailto:info@aiexcellencelabs.de'}
+                onClick={() => window.location.href = 'mailto:info@aiexcellencelabs.com'}
                 className="block w-full mt-4 px-4 py-3 text-base font-semibold text-white bg-primary hover:bg-primary/90 rounded-lg transition-all"
               >
                 Get Started

@@ -48,7 +48,7 @@ export const ProgramSection = () => {
             </div>
 
             <button
-              onClick={() => window.location.href = 'mailto:info@aiexcellencelabs.de'}
+              onClick={() => window.location.href = 'mailto:info@aiexcellencelabs.com'}
               className="w-full px-6 py-3 text-base font-semibold text-primary bg-primary/5 hover:bg-primary/10 border border-primary/20 rounded-lg transition-all"
             >
               Request detailed agenda

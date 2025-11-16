@@ -60,7 +60,7 @@ export const HeroSection = () => {
 
           <div ref={hero4.ref} className={`reveal ${hero4.isVisible ? 'active' : ''}`}>
             <button
-              onClick={() => window.location.href = 'mailto:info@aiexcellencelabs.de'}
+              onClick={() => window.location.href = 'mailto:info@aiexcellencelabs.com'}
               className="inline-flex items-center px-8 py-4 text-base font-semibold text-white bg-primary hover:bg-primary/90 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
             >
               Book a discovery call
